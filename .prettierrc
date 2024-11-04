@@ -1,7 +1,21 @@
 {
-    "printWidth": 80,             
-    "tabWidth": 2,               
-    "useTabs": false,              
-    "singleQuote": false,   
-    "plugins": ["prettier-plugin-latex"]  
-  }
+  "plugins": ["prettier-plugin-latex"],
+  "semi": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "printWidth": 80,
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": "*.tex",
+      "options": {
+        "tabWidth": 2,
+        "singleQuote": false,
+        "printWidth": 100,
+        "trailingComma": "none"
+      }
+    }
+  ]
+}
